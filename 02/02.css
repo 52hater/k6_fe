@@ -1,0 +1,137 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    /* 계산하기 쉽도록 마진패딩없도록 초기화를 시켜주는 것 */
+    /* border: 1px solid black; */
+}
+
+/* *이런걸 선택자라고 함 */
+/* css의 공부 > 셀렉터(선택자)공부 */
+/* 나머지 뭐 색깔주고 어쩌고는 그냥 검색해도됨 */
+/* 디자이너가 아닌이상 뭐.. */
+
+@media only screen and (max-width: 768px) {
+    main {
+        width: 100%;
+        margin-left: 0px;
+        background-color: rgb(54, 118, 139);
+      /* 768width 이하로 되면 100프로로 차는 */
+      /* Media Queries */
+      /* 왜 안먹혀 */
+        }
+    header > h1 {
+        font-size: medium;
+        color: white;
+        /* 이건 되는데 */
+    }
+}
+
+main {
+    width: 60%;
+    margin-left: 20%;
+    /* 100-60=40이니까 왼쪽에 20프로 마진주면 가운데로 오지 */
+    background-color: lightblue;
+}
+
+
+section {
+    background-color: white;
+    margin: 20px;
+    padding: 10px;
+}
+
+
+header > h1 {
+    text-align: center;
+    /* 유일하면 ID셀렉터로 */
+    /* 클래스선택자는 태그와 상관없이 묶을 수 있음 */
+    /* 예를들어 p h1 두개를 같은클래스로 묶어서 가운데정렬 가능 */
+    /* id선택자는 # 클래스선택자는 .  */
+    /* 위에처럼 header > h1로 설정해도 나옴 */
+    /* 그런식으로 클래스나 아이디 셀렉터 지정안해도 원하는거에 css먹이기 가능 */
+}
+
+nav > ul {
+    display: flex;
+    /* 인라인으로 가도록 */
+    /* 박스를 가지면 여백을 줄 수 있지 */
+    flex-wrap: wrap;
+    /* 플랙스 랩 : 자동줄바꿈, 화면 줄이면 아래로 줄바꿈 되는 것 확인 */
+    margin: 20px;
+    padding: 10px;
+    /* ul li에 점을 빼고싶어 */
+    list-style: none;
+    /* 이렇게 */
+    justify-content: right;
+    /* 오른쪽으로 정렬 */
+}
+
+nav li {
+    /* nav : 메뉴부분 */
+    /* 부등호쓰면 자기밑의 자식만 찾음 */
+    /* 부등호 안쓰고 공백을쓰면 자손들 다 찾아봄*/
+    /* 쉼표는 이거랑 이거 셀렉트 */
+    /* nav > ul > li 이렇게 써도 되긴 됨 */
+    margin: 3px;
+    padding: 2px;
+    background-color: rgb(160, 179, 229);
+    border-radius: 5px;
+}
+
+nav a {
+    /* = nav > ul > li > a */
+    text-decoration: none;
+    /* 하이퍼링크의 밑줄 없앰 */
+    color: white;
+}
+
+nav a:hover, nav li:hover {
+    /* 하이퍼링크에도 색깔주고 리스트박스에도 색깔주고 */
+    background-color: rgb(175, 206, 226);
+}
+
+nav a:visited {
+    background-color: rgb(57, 75, 87);
+}
+
+article {
+    padding: 30px;
+}
+
+article p {
+    /* 직계자식도 자손에 들어가서 공백만 줘도 걸림 */
+    margin: 20px;
+    padding: 10px;
+
+}
+
+section div {
+    display: flex;
+    /* 이걸해주면 그림밑에있던 글이 옆으로 가지 */
+    justify-content: left;
+    margin-top: 10px;
+}
+
+section p {
+    margin-left: 20px;
+    display: flex;
+    align-items: center;
+    /* 위에 두줄로 글자 가운데로 */
+}
+
+img {
+    border-radius: 50%;
+    /* 50%때리면 정사각형에서 원으로 */
+}
+
+footer {
+    background-color: black;
+    color: white;
+}
+
+footer li {
+    /* footer li에도 점을 빼고싶어 */
+    list-style: none;
+    padding: 20px;
+    font-size: 12px;
+}

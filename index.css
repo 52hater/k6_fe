@@ -9,7 +9,7 @@ main {
 }
 
 header {
-    background-color: black;
+    background-color: midnightblue;
     color: white;
     height: 100px;
     display: flex;
@@ -50,4 +50,30 @@ article a {
 article li:hover, article a:visited {
     background-color: antiquewhite;
     color: rgb(153, 153, 153);
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    /* 옆으로 안가고 밑으로 가도록 */
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+}
+
+section > h1 {
+    display: flex;
+    /* 수평수직정렬 */
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+section > div {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px dotted grey;
+    padding: 20px;
 }

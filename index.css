@@ -42,3 +42,12 @@ article li {
     border: 1px dotted grey;
     padding: 10px;
 }
+
+article a {
+    text-decoration: none;
+}
+
+article li:hover, article a:visited {
+    background-color: antiquewhite;
+    color: rgb(153, 153, 153);
+}

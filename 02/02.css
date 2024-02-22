@@ -10,21 +10,6 @@
 /* 나머지 뭐 색깔주고 어쩌고는 그냥 검색해도됨 */
 /* 디자이너가 아닌이상 뭐.. */
 
-@media only screen and (max-width: 768px) {
-    main {
-        width: 100%;
-        margin-left: 0px;
-        background-color: rgb(54, 118, 139);
-      /* 768width 이하로 되면 100프로로 차는 */
-      /* Media Queries */
-      /* 왜 안먹혀 */
-        }
-    header > h1 {
-        font-size: medium;
-        color: white;
-        /* 이건 되는데 */
-    }
-}
 
 main {
     width: 60%;
@@ -135,3 +120,24 @@ footer li {
     padding: 20px;
     font-size: 12px;
 }
+
+
+
+
+@media only screen and (max-width: 768px) {
+    main {
+        width: 100%;
+        margin-left: 0px;
+        background-color: rgb(54, 118, 139);
+      /* 768width 이하로 되면 100프로로 차는 */
+      /* Media Queries */
+      /* 왜 안먹혀 */
+        }
+    header > h1 {
+        font-size: medium;
+        color: white;
+        /* 이건 되는데 */
+    }
+}
+/* 이게 원래 위에 메인의 위에 있었는데 밑으로 옮기니까 되네 */
+/* 이게 작동하고 메인이 작동돼서 그런건가 */

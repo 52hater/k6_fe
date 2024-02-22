@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../index.css">
     <link rel="stylesheet" href="03.css">
     <!-- css여러개 쓸 수 있음 -->
-    
+
     <!-- 자바스크립트 위치1 헤더부분에 넣을 수 있음
         근데 그러면 헤드 너무 길어지니까 외부파일로 가져와서링크(03.js)
     <script>
@@ -30,11 +30,12 @@
         </header>
         <section>
             <h1>자바스크립트 함수 이해하기</h1>
-            <div>
-                <button>버튼1</button>
-                <button>버튼2</button>
+            <div id = "btArea">
+                <button onclick="handleClick(1)">버튼1</button>
+                <button onclick="handleClick(2)">버튼2</button>
+                <!-- 인수를 주면 함수에서 매개변수로 받아서 실행 > 자바스크립트에서 함수 매개변수 n을 써줘 (n)으로 -->
             </div>
-            <div>
+            <div id = "msgArea">
                 메시지 영역
             </div>
         </section>

@@ -14,6 +14,9 @@
 상수에 값만 쓸 수 있는게 아닌 함수도 들어가 */
 
 const handleClick = (n) => {
-    document.querySelector("#msgArea").innerHTML = `<h2>버튼 ${n}이(가) 눌러졌습니다.<h2>`;
+    if(n==1)
+    document.querySelector("#msgArea").innerHTML = `<h2>버튼 ${n}이(가) 눌러졌습니다. 잘하셨습니다.<h2>`;
+    else
+    document.querySelector("#msgArea").innerHTML = `<h2>버튼 ${n}이(가) 눌러졌습니다. 꽝입니다.<h2>`;
 }
-//const키워드로 함수작성
+//const키워드로 함수작성, if~else문 사용

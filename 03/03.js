@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", () => {//이벤트에 귀를 기�
 //const키워드로 함수작성, if~else문 사용
 
 const handleClick = (n) => {
-    let msg;
+    let msg;//let을 썼네? 공부해
     if (n == 1)
         msg = `<h2>안녕하세요"<h2>`;
     else if (n == 2)

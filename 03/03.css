@@ -19,3 +19,11 @@ h2 {
     font-size: 14px;
     color: blue;
 }
+
+#btArea2 > button {
+    background-color: rgb(58, 99, 84);
+}
+
+#bt3 {
+    background-color: rgb(90, 58, 114);
+}

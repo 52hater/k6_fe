@@ -77,3 +77,15 @@ section > div {
     border: 1px dotted grey;
     padding: 20px;
 }
+
+header > div > a {
+    text-decoration: none;
+    display: inline-flex;
+    padding: 10px;
+    color: midnightblue;
+    background-color: white;
+    border-radius: 10px;
+    width: 60px;
+    justify-content: center;
+    align-items: center;
+}

@@ -1,0 +1,87 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+    font-family: 'Protest Strike';
+    font-style: normal;
+    font-weight: 400;
+ }
+
+ li {
+    list-style: none;
+ }
+
+ main {
+    width: 60%;
+    margin-left: 20%;
+    background-color:lightskyblue;
+ }
+ header {
+    background-color: lightblue;
+    color: whitesmoke;
+    height: 100px;
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+ }
+ 
+header a {
+   text-decoration: none;
+   display: inline-flex;
+   padding: 10px;
+   background-color: midnightblue;
+   color: whitesmoke;
+   border-radius: 10px;
+ }
+ section h1 {
+    display: flex;
+    padding: 20px;
+    justify-content: center;
+    align-items: center;
+}
+
+ section > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .row {
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 10px;
+  }
+  
+  .row > div {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+    width: 40%;  
+  }
+  
+  select {
+    display: inline-flex;
+    width: 80%; 
+    height: 40px; 
+    border-radius: 10px;
+  }
+  
+  input[type=number] {
+    display: inline-flex;
+    width: 75%; 
+    height: 40px;
+    border-radius: 10px;
+  }
+  
+  label {
+    font-size: large;
+    font-weight: bold; 
+  }
+  
+  #txt2 {
+    background-color: beige;
+  }

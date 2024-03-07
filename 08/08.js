@@ -65,3 +65,66 @@ document.addEventListener("DOMContentLoaded", () => {
     });
 
 });
+
+function generateLottoNumbers() {
+    var numbers = [];
+    
+    // 1부터 45까지의 숫자를 배열에 추가
+    for (var i = 1; i <= 45; i++) {
+        numbers.push(i);
+    }
+    
+    var lottoNumbers = [];
+    
+    // 6개의 번호를 랜덤으로 선택하여 로또 번호로 저장
+    for (var i = 0; i < 6; i++) {
+        // 배열에서 랜덤으로 번호 선택
+        var randomIndex = Math.floor(Math.random() * numbers.length);
+        // 선택된 번호를 결과 배열에 추가
+        lottoNumbers.push(numbers[randomIndex]);
+        // 선택된 번호를 배열에서 제거하여 중복 선택 방지
+        numbers.splice(randomIndex, 1);
+    }
+    
+    // 로또 번호를 오름차순으로 정렬
+    lottoNumbers.sort(function(a, b) {
+        return a - b;
+    });
+    
+    // 결과 출력
+    document.getElementById("result").innerText = "로또 번호: " + lottoNumbers.join(", ");
+}
+</script>
+</body>
+</html>
+
+document.getElementById("generateButton").addEventListener("click", function() {
+    let arr = [];
+    let i = 1;
+    
+    // 1부터 45까지의 숫자를 배열에 추가
+    while (i <= 45) {
+        arr.push(i);
+        i++;
+    }
+    
+    let lottoNumbers = [];
+    
+    // 6개의 번호를 랜덤으로 선택하여 로또 번호로 저장
+    while (lottoNumbers.length < 6) {
+        // 배열에서 랜덤으로 번호 선택
+        let randomIndex = Math.floor(Math.random() * arr.length);
+        // 선택된 번호를 결과 배열에 추가
+        lottoNumbers.push(arr[randomIndex]);
+        // 선택된 번호를 배열에서 제거하여 중복 선택 방지
+        arr.splice(randomIndex, 1);
+    }
+    
+    // 로또 번호를 오름차순으로 정렬
+    lottoNumbers.sort(function(a, b) {
+        return a - b;
+    });
+    
+    // 결과 출력
+    document.getElementById("result").innerText = "로또 번호: " + lottoNumbers.join(", ");
+});

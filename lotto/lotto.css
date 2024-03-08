@@ -1,0 +1,80 @@
+
+section button {
+    background-color: antiquewhite;
+    color: rgb(77, 54, 11);
+    font-weight: bold;
+    width: 140px;
+    height: 50px;
+    border: none;
+    border-radius: 50%;
+}
+
+section button:hover {
+    background-color: rgb(184, 173, 157);
+    color: rgb(77, 54, 11);
+    font-weight: bold;
+    width: 150px;
+    height: 60px;
+    border: none;
+    border-radius: 50%;
+}
+
+section span {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+
+    width: 60px;
+    height: 60px;
+    /* border: 1px solid black; */
+    border-radius: 50%;
+    color: white;
+    font-weight: bold;
+    margin: 5px;
+}
+
+#numDisp {
+    margin : 10px;
+    background-color: rgb(27, 22, 22);
+}
+
+.sp0 {
+    background-color: rgb(201, 93, 93);
+}
+
+.sp1 {
+    background-color: rgb(165, 112, 42);
+}
+
+.sp2 {
+    background-color: rgb(165, 132, 42);
+}
+
+.sp3 {
+    background-color: rgb(163, 165, 42);
+}
+
+.sp4 {
+    background-color: rgb(112, 165, 42);
+}
+
+.sp5 {
+    background-color: rgb(42, 165, 108);
+}
+
+.sp6 {
+    background-color: rgb(42, 116, 165);
+}
+
+.sp7 {
+    background-color: rgb(69, 42, 165);
+}
+
+.sp8 {
+    background-color: rgb(140, 42, 165);
+}
+
+.sp9 {
+    background-color: rgb(165, 42, 110);
+}
+
